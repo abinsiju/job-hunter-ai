@@ -1,0 +1,29 @@
+{
+  "verified_on": "2026-11-10",
+  "how": "Each page was fetched once with an honest user agent; robots.txt was read and respected. 'feed' pages have a documented public JSON feed and are read by an adapter. 'manual' pages are reachable and not disallowed, but have no documented feed: open them in a browser and paste an ad into `draft`. Nothing is scraped and no block is bypassed.",
+  "pages": [
+    {"name": "First Focus", "kind": "msp", "mode": "feed", "platform": "workable", "workable_slug": "first-focus",
+     "url": "https://www.firstfocus.com.au/careers/", "robots": "allows",
+     "note": "Mid-market MSP. The feed lists AU, NZ, PH and ZA roles: the adapter keeps Australia only."},
+    {"name": "Kinetic IT", "kind": "msp", "mode": "manual", "platform": "pageup",
+     "url": "https://careers.kineticit.com.au/jobs/search", "robots": "allows", "note": "PageUp has no documented public feed."},
+    {"name": "Robert Half", "kind": "recruiter", "mode": "manual", "platform": "custom",
+     "url": "https://www.roberthalf.com/au/en/jobs", "robots": "allows"},
+    {"name": "Morgan McKinley", "kind": "recruiter", "mode": "manual", "platform": "custom",
+     "url": "https://www.morganmckinley.com/au/jobs", "robots": "allows"},
+    {"name": "Peoplebank", "kind": "recruiter", "mode": "manual", "platform": "custom",
+     "url": "https://www.peoplebank.com.au/job-results", "robots": "allows",
+     "note": "A recruiter careers page (manual watch-list entry)."},
+    {"name": "Hays", "kind": "recruiter", "mode": "manual", "platform": "custom",
+     "url": "https://www.hays.com.au/it/offices/melbourne", "robots": "allows", "note": "Melbourne IT desk page; use its job search in a browser."},
+    {"name": "Clicks IT Recruitment", "kind": "recruiter", "mode": "manual", "platform": "custom",
+     "url": "https://clicks.com.au/jobs/", "robots": "no robots.txt published (404)"},
+    {"name": "Talent International", "kind": "recruiter", "mode": "manual", "platform": "custom",
+     "url": "https://www.talentinternational.com/", "robots": "allows", "note": "Home page only: the jobs page URL has not been verified."},
+    {"name": "Interleave", "kind": "msp", "mode": "manual", "platform": "unknown",
+     "url": "https://www.interleave.com.au/", "robots": "allows", "note": "Home page only: the careers page URL has not been verified."},
+    {"name": "KMTech", "kind": "msp", "mode": "excluded", "platform": "unknown",
+     "url": "https://www.kmtech.com.au/careers", "robots": "blocked: HTTP 403 to automated clients",
+     "note": "Blocks automated access. Not fetched by any adapter; visit it yourself in a browser."}
+  ]
+}

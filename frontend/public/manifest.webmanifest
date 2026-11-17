@@ -1,0 +1,23 @@
+{
+  "name": "Job Hunter",
+  "short_name": "Job Hunter",
+  "description": "Private job discovery, scoring and application tracking. Runs on your own Mac.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f5f5f7",
+  "theme_color": "#f5f5f7",
+  "categories": ["productivity", "business"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Jobs", "url": "/jobs" },
+    { "name": "Draft studio", "url": "/studio" },
+    { "name": "Tracker", "url": "/tracker" }
+  ]
+}

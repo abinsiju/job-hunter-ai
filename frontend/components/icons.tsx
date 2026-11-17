@@ -1,0 +1,37 @@
+import type { ReactElement, SVGProps } from "react";
+
+type P = SVGProps<SVGSVGElement>;
+const base = { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true } as const;
+const mk = (d: ReactElement) => function Icon(p: P) { return <svg {...base} {...p}>{d}</svg>; };
+
+export const IconToday = mk(<><rect x="3.5" y="4.5" width="17" height="16" rx="3.5" /><path d="M3.5 9.5h17M8 3v3M16 3v3" /><circle cx="12" cy="14.5" r="1.6" fill="currentColor" stroke="none" /></>);
+export const IconJobs = mk(<><rect x="3" y="7.5" width="18" height="12" rx="3" /><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5M3 13h18" /></>);
+export const IconStudio = mk(<><path d="M14.5 3.5H8A2.5 2.5 0 0 0 5.5 6v12A2.5 2.5 0 0 0 8 20.5h8a2.5 2.5 0 0 0 2.5-2.5V7.5z" /><path d="M14.5 3.5v3a1 1 0 0 0 1 1h3M9 12.5h6M9 16h4" /></>);
+export const IconTracker = mk(<><path d="M9 6.5h11M9 12h11M9 17.5h11" /><path d="m3.5 6.5 1.2 1.2 2.1-2.4M3.5 12l1.2 1.2 2.1-2.4M3.5 17.5l1.2 1.2 2.1-2.4" /></>);
+export const IconPerson = mk(<><circle cx="12" cy="8.5" r="3.7" /><path d="M4.5 20c.8-3.6 3.9-5.5 7.5-5.5s6.7 1.9 7.5 5.5" /></>);
+export const IconGear = mk(<><circle cx="12" cy="12" r="3" /><path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.5 5.5l1.7 1.7M16.8 16.8l1.7 1.7M5.5 18.5l1.7-1.7M16.8 7.2l1.7-1.7" /></>);
+export const IconSparkle = mk(<><path d="M12 3.5 13.9 9l5.6 1.9-5.6 1.9L12 18.5l-1.9-5.7L4.5 10.9 10.1 9z" /><path d="M18.5 3.5v3M17 5h3" /></>);
+export const IconChevron = mk(<path d="m9.5 5.5 6.5 6.5-6.5 6.5" />);
+export const IconBack = mk(<path d="M14.5 5.5 8 12l6.5 6.5" />);
+export const IconPlus = mk(<path d="M12 5v14M5 12h14" />);
+export const IconClose = mk(<path d="m6 6 12 12M18 6 6 18" />);
+export const IconCheck = mk(<path d="m5 12.5 4.5 4.5L19 7.5" />);
+export const IconSearch = mk(<><circle cx="10.5" cy="10.5" r="6.5" /><path d="m15.5 15.5 5 5" /></>);
+export const IconLink = mk(<><path d="M10 14a4.2 4.2 0 0 0 5.9 0l3-3a4.2 4.2 0 0 0-5.9-5.9l-1 1" /><path d="M14 10a4.2 4.2 0 0 0-5.9 0l-3 3a4.2 4.2 0 0 0 5.9 5.9l1-1" /></>);
+export const IconDownload = mk(<><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14" /></>);
+export const IconWarning = mk(<><path d="M12 4 2.8 19.5h18.4z" /><path d="M12 10v4.2" /><circle cx="12" cy="16.9" r=".9" fill="currentColor" stroke="none" /></>);
+export const IconInfo = mk(<><circle cx="12" cy="12" r="8.5" /><path d="M12 11v5" /><circle cx="12" cy="7.9" r=".9" fill="currentColor" stroke="none" /></>);
+export const IconShield = mk(<><path d="M12 3.2 5 6v5.5c0 4.4 2.9 7.7 7 9.3 4.1-1.6 7-4.9 7-9.3V6z" /><path d="m8.8 12 2.4 2.4 4-4.4" /></>);
+export const IconClock = mk(<><circle cx="12" cy="12" r="8.5" /><path d="M12 7.5V12l3 2" /></>);
+export const IconBuilding = mk(<><path d="M5 20.5V5.5A1.5 1.5 0 0 1 6.5 4h7A1.5 1.5 0 0 1 15 5.5v15M15 10h3.5A1.5 1.5 0 0 1 20 11.5v9M3.5 20.5h17" /><path d="M8.5 8h3M8.5 11.5h3M8.5 15h3" /></>);
+export const IconPin = mk(<><path d="M12 21s6.5-5.6 6.5-11a6.5 6.5 0 0 0-13 0c0 5.4 6.5 11 6.5 11z" /><circle cx="12" cy="10" r="2.3" /></>);
+export const IconRefresh = mk(<><path d="M20 11.5A8 8 0 0 0 6.2 6.8L4 9M4 4.5V9h4.5M4 12.5a8 8 0 0 0 13.8 4.7L20 15M20 19.5V15h-4.5" /></>);
+export const IconEyeOff = mk(<><path d="M3.5 3.5l17 17M10.6 5.2A9.5 9.5 0 0 1 12 5c5 0 8.3 3.7 9.5 7a11 11 0 0 1-2.6 3.9M6.3 6.7A11 11 0 0 0 2.5 12c1.2 3.3 4.5 7 9.5 7a9.4 9.4 0 0 0 4-.9" /><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2" /></>);
+export const IconBan = mk(<><circle cx="12" cy="12" r="8.5" /><path d="m6 6 12 12" /></>);
+export const IconDoc = mk(<><path d="M14.5 3.5H8A2.5 2.5 0 0 0 5.5 6v12A2.5 2.5 0 0 0 8 20.5h8a2.5 2.5 0 0 0 2.5-2.5V7.5z" /><path d="M14.5 3.5v3a1 1 0 0 0 1 1h3" /></>);
+export const IconSend = mk(<path d="M20.5 3.5 10 14M20.5 3.5l-6.5 17-3-7-7-3z" />);
+export const IconMore = mk(<><circle cx="5.5" cy="12" r="1.2" fill="currentColor" /><circle cx="12" cy="12" r="1.2" fill="currentColor" /><circle cx="18.5" cy="12" r="1.2" fill="currentColor" /></>);
+export const IconLock = mk(<><rect x="5" y="10.5" width="14" height="10" rx="3" /><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" /></>);
+export const IconBolt = mk(<path d="M13 3 5 13.5h6L10 21l8-10.5h-6z" />);
+export const IconTarget = mk(<><circle cx="12" cy="12" r="8.5" /><circle cx="12" cy="12" r="4.5" /><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" /></>);
+export const IconLogo = mk(<><circle cx="10.5" cy="10.5" r="6.2" /><path d="m15.2 15.2 4.8 4.8" /><path d="m7.9 10.6 1.9 1.9 3.4-3.7" /></>);

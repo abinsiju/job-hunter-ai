@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Job Hunter Autofill",
+  "version": "1.0.0",
+  "description": "Fills the job application form you have open, in YOUR browser, from your verified Job Hunter profile. Never clicks buttons, never submits, never touches security checks.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["http://127.0.0.1/*"],
+  "action": { "default_popup": "popup.html", "default_title": "Job Hunter Autofill" },
+  "background": { "service_worker": "background.js" }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Optional: runs scripts/hunt.sh every hour; hunt.sh itself only runs a round when 12+ hours have passed while you are logged in. NOT installed automatically.
+     Install: copy to ~/Library/LaunchAgents/com.jobhunter.hunt.plist, replace /ABSOLUTE/PATH, then
+     launchctl load ~/Library/LaunchAgents/com.jobhunter.hunt.plist     Remove: launchctl unload <same file> -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.jobhunter.hunt</string>
+  <key>ProgramArguments</key><array><string>/ABSOLUTE/PATH/job-hunter-ai/scripts/hunt.sh</string></array>
+  <key>RunAtLoad</key><true/>
+  <key>StartInterval</key><integer>3600</integer>
+  <key>EnvironmentVariables</key><dict><key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/Users/YOU/.local/bin:/usr/bin:/bin</string></dict>
+  <key>StandardOutPath</key><string>/tmp/jobhunter-hunt.out</string>
+  <key>StandardErrorPath</key><string>/tmp/jobhunter-hunt.err</string>
+</dict></plist>

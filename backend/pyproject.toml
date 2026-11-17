@@ -1,0 +1,31 @@
+[project]
+name = "jobhunter-backend"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "pydantic-settings",
+  "httpx",
+  "sqlalchemy",
+  "psycopg[binary]",
+  "alembic",
+  "redis",
+  "celery[redis]",
+  "python-docx",
+  "playwright",
+  "pyjwt>=2.15.1",
+  "argon2-cffi>=25.1.0",
+  "reportlab>=5.1.0",
+  "pypdf>=7.0.1",
+]
+
+[dependency-groups]
+dev = ["pytest", "pytest-asyncio"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]  # browser tests live in tests_e2e and run on demand: uv run pytest tests_e2e
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = ["live: needs a running Ollama (set RUN_LIVE=1)"]
